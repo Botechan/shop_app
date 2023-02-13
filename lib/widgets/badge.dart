@@ -4,12 +4,12 @@ class Badge extends StatelessWidget {
   const Badge({
     Key? key,
     required this.child,
-    required this.value,
+    required this.label,
     this.color = Colors.red,
   }) : super(key: key);
 
   final Widget child;
-  final String value;
+  final String label;
   final Color color;
 
   @override
@@ -35,7 +35,7 @@ class Badge extends StatelessWidget {
               minHeight: 16,
             ),
             child: Text(
-              value,
+              label,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 10,
